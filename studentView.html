@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="view.css">
+</head>
+
+<body>
+    <h3 class="title">Student Details</h3>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+        <tbody id="studentTable">
+        </tbody>
+    </table>
+    <!-- Update Student Modal -->
+    <div id="updateStudentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Update Student</h3>
+            <form id="updateStudentForm">
+                <input type="hidden" id="updateId" name="id">
+
+                <label for="updateName">Name:</label>
+                <input type="text" id="updateName" name="name" required>
+
+                <label for="updateAge">Age:</label>
+                <input type="number" id="updateAge" name="age" required>
+
+                <label for="updateAddress">Address:</label>
+                <input type="text" id="updateAddress" name="address" required>
+
+                <label for="updateEmail">Email:</label>
+                <input type="email" id="updateEmail" name="email" required>
+
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <div class="back"><a href="register.html">Back</a></div>
+    <script src="studentView.js"></script>
+</body>
+
+</html>
